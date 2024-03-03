@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Article</title>
     <script>
+function openInDefaultBrowser(url) {
+  var userAgent = navigator.userAgent.toLowerCase();
+  if (userAgent.indexOf("android") !== -1) {
+    var confirmation = confirm("You are using an Android device. Do you want to open the website in your default browser?");
+    if (confirmation) {
+      window.open(url, "_system");
+    }
+  } else {
+    // For non-Android devices, simply open the URL in a new tab/window
+    window.open(url, "_blank");
+  }
+}
+
+// Example usage:
+var websiteUrl = "https://example.com";
+openInDefaultBrowser(websiteUrl);
+</script>
+
+
+    <script>
       // Make a request to cat.com
       fetch('https://api.country.is/')
         .then(response => response.text())  // Assuming the response is plain text
