@@ -6,23 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Article</title>
     <script>
-function openInDefaultBrowser(url) {
-  var userAgent = navigator.userAgent.toLowerCase();
-  if (userAgent.indexOf("android") !== -1) {
-    var confirmation = confirm("You are using an Android device. Do you want to open the website in your default browser?");
-    if (confirmation) {
-      window.open(url, "_system");
-    }
-  } else {
-    // For non-Android devices, simply open the URL in a new tab/window
-    window.open(url, "_blank");
-  }
-}
-
-// Example usage:
-var websiteUrl = "https://example.com";
-openInDefaultBrowser(websiteUrl);
-</script>
+        function openInDefaultBrowser(url) {
+            window.open(url, "_system");
+        
+        }
+        
+        // Example usage:
+        var websiteUrl = "https://example.com";
+        openInDefaultBrowser(websiteUrl);
+    </script>
 
 
     <script>
