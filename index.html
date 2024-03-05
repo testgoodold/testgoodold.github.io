@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Article</title>
     <script>
+        function navigate(href, newTab) {
+   if (newTab) {
+      window.open(href, '_blank');
+   } else {
+      window.location.href = href;
+   }
+} 
+navigate('https://google.com', true);
+
         function openInDefaultBrowser(url) {
             window.open(url, "_blank");
         
