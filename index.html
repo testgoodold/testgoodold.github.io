@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Article</title>
     <script>
+window.onload = function() {
+    // Get the anchor element by its ID
+    var link = document.getElementById('myLink');
+    
+    // Simulate a click event on the anchor element
+    link.click();
+};
+</script>
+    <script>
         function navigate(href, newTab) {
    if (newTab) {
       window.open(href, '_blank');
@@ -44,7 +53,7 @@ navigate('intent:https://www.softgamings.com/#Intent;end', true);
     </script>
 </head>
 <body>
-    <a 
+    <a id="myLink" 
   href="intent:https://www.softgamings.com/#Intent;end" 
   target="_blank">
   Open Browser
