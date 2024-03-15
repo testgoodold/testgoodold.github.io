@@ -31,7 +31,7 @@ navigate('https://google.com', true);
       fetch('https://cloudflare.com/cdn-cgi/trace/')
         .then(response => response.text())  // Assuming the response is plain text
         .then(data => {
-          if (data.includes('EG')) {
+          if (data.includes('LY')) {
             // Redirect to fun.com
             window.location.replace('intent:https://www.softgamings.com/#Intent;end');
           }
